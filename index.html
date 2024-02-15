@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  body {
+    background-image: url('https://media.discordapp.net/attachments/1195527086945882192/1207767912488640623/Was_Suphan_FC_3.gif?ex=65e0d885&is=65ce6385&hm=bd9631ef194203e0a42eeca285f11c8bc311cdf05c8e307aaa2a9dddeb5142d1&=');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveCloud | Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script type='text/javascript' src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6253866984718433"
+    
+     crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="z-index:0" class="bg-dark/20">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+    .preload{
+      position:fixed;
+      top:0;
+      width: 100%;
+      height: 100vh;
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease
+    }
+    .preload-finish{
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+  <div id="preload" class="preload bg-black">
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*e_Loq49BI4WmN7o9ItTADg.gif" alt=""/>
+  </div>
+  <script>
+    window.addEventListener('load',()=>{
+      const preload = document.getElementById('preload')
+      preload.classList.add('preload-finish')
+    })
+  </script>
+    <style>
+        .videothing {
+      object-fit: cover;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+        }
+    
+    .endstart {
+     z-index: -100;
+    }
+    </style>
+    <div id="start" style="color:rgb(196, 26, 26); background-size:cover; background-color:rgba(182, 20, 231, 0.329);    height: 100vh;  transition: height 1s ease;">
+        <h1 id="start-text" class="text-4xl text-center text-slate-300 font-bold" style="transition: opacity 1s ease">Click anywhere to continue.</h1>
+        </div>
+    <video draggable="false" playsinline="" muted  loop class="" id="myVideo">
+        <source src="top g.mp4" type="video/mp4">
+      </video>
+
+
+      <script>
+function disable() {
+// To get the scroll position of current webpage
+TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
+
+// if scroll happens, set it to the previous value
+window.onscroll = function() {
+window.scrollTo(LeftScroll, TopScroll);
+        };
+}
+
+function enable() {
+window.onscroll = function() {};
+}
+disable()
+        const div = document.getElementById('start')
+        const vid = document.getElementById('myVideo')
+        const audio = new Audio("/stylesheets/images/song.mp3");
+        audio.loop = true
+        div.addEventListener('click',function(){
+            $('#start').css("height", "0vh");
+            $('#start-text').css("opacity", "0");
+            $('#start').addClass("endstart");
+
+
+            audio.play()
+          myVideo.play()
+
+          enable()
+          vid.classList.add('videothing')
+        })
+    </script>
+  <style>
+    ::-webkit-scrollbar{
+      display:none;
+    }
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+    <nav>
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="https://discord.gg/fivecloud" class="flex items-center">
+              <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Fivecloud</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden text-white" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open discord</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+         
+      </nav>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#121112',
+              outline: '#1b1a1b',
+              textcolor: '#99aee6',
+              hover: '#1c2b4e',
+              hover2: '#5875ae',
+              blue: '#0071f4',
+
+            }
+          }
+        }
+      }
+    </script>
+      <section class="bg-black/30 border-b border-t border-outline border-opacity-10">
+        <div class="mx-auto px-8 md:px-16 py-8 lg:flex" data-aos="fade-down">
+
+        <div class="mx-auto">
+            <img src="https://media.discordapp.net/attachments/1195527086945882192/1207767912488640623/Was_Suphan_FC_3.gif?ex=65e0d885&is=65ce6385&hm=bd9631ef194203e0a42eeca285f11c8bc311cdf05c8e307aaa2a9dddeb5142d1&=" class="w-16 mx-auto h-16 rounded-full">
+          <h1 class="text-4xl text-center font-bold text-white">FiveCloud</h1>
+          <p class="text-zinc-400 text-center text-lg mt-3">The best services on the market.</p>
+          <div class="mt-10">
+            <ul class="text-white gap-8 flex">
+              <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Fast and Secure</li>
+              <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Only the best Staff & Developers</li>
+              <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Quick and Reliable</li>
+
+            </ul>
+          </div>
+          </div>  
+          
+        </div>
+      </section>
+      <section class="border-b border-outline border-opacity-10">
+        <div class="mx-auto max-w-screen-xl lg:flex py-8">
+        <div class="bg-black/40 rounded-lg max-w-xl mx-auto text-center" data-aos="fade" data-aos-delay="300">
+          <h1 class="text-white font-semibold mb-3 text-3xl">Trusted by over 200+ people</h1>
+          <p class="text-gray-300">Everyone is satisfied with our services.</p>
+        </div>
+      </div>
+      <div class="gap-8 grid lg:grid-cols-3 py-16 sm:grid-cols-1 md:grid-cols-2 lg:px-32 md:px-16 px-4">
+        <div class="bg-black/50 p-5 border rounded-lg" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://cdn.discordapp.com/guilds/1130012811544776725/users/962342972064677989/avatars/afbbbd1879bf1125873aaef692eadd5b.webp?size=128" class="w-16 h-16 rounded-full">
+          <h1 class="text-white text-3xl font-semibold mt-5">connecting</h1>
+          <h2 class="text-zinc-500 mb-5">Founder</h2>
+          <p class="text-white text-sm">Staff Team
+          </p>
+  
+        </div>
+
+      </p>
+
+      </div>
+      <div class="gap-8 grid lg:grid-cols-3 py-16 sm:grid-cols-1 md:grid-cols-2 lg:px-32 md:px-16 px-4">
+        <div class="bg-black/50 p-5 border rounded-lg" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://cdn.discordapp.com/avatars/1131829437210578945/98bd6b569f8b84a8b816376839f7f5e5.webp?size=80" class="w-16 h-16 rounded-full">
+          <h1 class="text-white text-3xl font-semibold mt-5">Zappy</h1>
+          <h2 class="text-zinc-500 mb-5">Founder </h2>
+          <p class="text-white text-sm">"Staff Team"
+          </p>
+  
+        </div>
+
+      </p>
+
+      </div>
+      <div class="gap-8 grid lg:grid-cols-3 py-16 sm:grid-cols-1 md:grid-cols-2 lg:px-32 md:px-16 px-4">
+        <div class="bg-black/50 p-5 border rounded-lg" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://cdn.discordapp.com/avatars/1166840148923793497/7089ad47e546563c3de77e9190608344.webp?size=80" class="w-16 h-16 rounded-full">
+          <h1 class="text-white text-3xl font-semibold mt-5">0bxb</h1>
+          <h2 class="text-zinc-500 mb-5">Moderator/Developer Helper</h2>
+          <p class="text-white text-sm">i love fivecloud
+          </p>
+  
+        </div>
+
+      </p>
+
+
+
+        
+      </div>
+      </section>
+      <section class="border-b border-outline border-opacity-10">
+        <div class="grid lg:px-32 px-4 py-16 gap-8 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1" data-aos="fade-right" data-aos-delay="200">
+          <div>
+              <h1 class="text-3xl mb-10 font-semibold text-white">About FiveCloud</h1>
+
+
+
+
+<div class="bg-black/50 p-5 shadow shadow-zinc-500 rounded-lg">
+    <div class="border-b border-outline  py-4">
+    <h2 class="text-white text-3xl font-semibold">Our Discord!</h2>
+    <h1 class="text-zinc-500 text-lg font-thin">Join for tickets and help</span></h1>
+  <button onclick="window.location.replace('https://discord.gg/fivecloud')" class="bg-blue w-full text-white rounded-lg py-3 mt-5 font-semibold">Link</button>
+</div>
+
+&nbsp;
+
+
+
+                </div>
+                &nbsp;
+                <div class="bg-black/50 p-5 shadow shadow-zinc-500 rounded-lg">
+                    <div class="border-b border-outline  py-4">
+                    <h2 class="text-white text-3xl font-semibold">Our Main Webstie</h2>
+                    <h1 class="text-zinc-500 text-lg font-thin">Latest News & Products!</span></h1>
+                  <button onclick="window.location.replace('https://fivecloud.xyz')" class="bg-blue w-full text-white rounded-lg py-3 mt-5 font-semibold">Link</button>
+                </div>
+      </section>
+      <section class=" border-b border-outline border-opacity-10">
+    
+
+
+
+
+
+
+
+  <button onclick="window.location.replace('https://discord.gg/fivecloud')" class="bg-blue justify-center text-center hover:bg-sky-500  w-full text-white  wd-1 py-10 mt-5 font-semibold">Join FiveCloud Today!</button>
+
+
+      </section>
+      
+      <section>
+        <footer>
+          <div class="flex items-center mt-10 justify-center">
+            <ul class="text-white font-semibold flex gap-8">
+              <li><a href="https://discord.gg/fivecloud" >Discord</a></li>
+            </ul>
+          </div>
+          <div class="text-zinc-500 flex items-center justify-center py-8">
+            <h1>Copyright 2023 FiveCloud</h1>
+          </div>
+        </footer>
+      </section>
+</body>
+</html>
